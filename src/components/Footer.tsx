@@ -78,7 +78,7 @@ const Footer = () => {
             {/* MENU START */}
             <div className="hidden lg:flex flex-col">
               <div className="tracking-widest uppercase text-sm pb-2">
-                About luxera
+                About PureStitch
               </div>
               {Aboutlinks.map((items, index) => (
                 <div key={index}>
