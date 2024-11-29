@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
             <div className="tracking-widest uppercase text-[12px] flex gap-x-24 md:gap-0 flex-col leading-relaxed">
               <span>Send Email</span>
-              <span className="cursor-pointer">Contactus@luxera.com.pk</span>
+              <span className="cursor-pointer">Contactus@purefit.com.pk</span>
             </div>
             <div className="tracking-widest uppercase text-[12px] flex flex-col gap-x-[38px] md:gap-0 leading-relaxed pt-4">
               <span className="cursor-pointer">UAN: 042 111-12-6423</span>
@@ -78,7 +78,7 @@ const Footer = () => {
             {/* MENU START */}
             <div className="hidden lg:flex flex-col">
               <div className="tracking-widest uppercase text-sm pb-2">
-                About PureStitch
+                About PureFit
               </div>
               {Aboutlinks.map((items, index) => (
                 <div key={index}>
@@ -149,10 +149,10 @@ const Footer = () => {
       <Wrapper className="flex items-center justify-between mt-4 flex-col md:flex-row gap-[10px] md:gap-0">
         {/* LEFT START */}
         <div className="text-[12px] text-white dark:text-gray-100 text-center md:text-left uppercase">
-          © 2024 <Link href={"/"}>Luxera</Link>, Inc. All Rights Reserved
+          © 2024 <Link href={"/"}>Purefit</Link>, Inc. All Rights Reserved
         </div>
         {/* LEFT END */}
-        <span className="text-[11px] text-gray-400 hidden lg:flex">
+        {/* <span className="text-[11px] text-gray-400 hidden lg:flex">
           Created By Sufian! For inquiries, contact:
           <Link
             target="_blank"
@@ -161,7 +161,7 @@ const Footer = () => {
           >
             sufiancoding@gmail.com
           </Link>
-        </span>
+        </span> */}
         {/* RIGHT START */}
         <div className="flex gap-2 md:gap-5 text-center md:text-left flex-wrap justify-center">
           {Bottomlinks.map((items, index) => (

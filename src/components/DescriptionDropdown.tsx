@@ -76,7 +76,7 @@ const DescriptionDropdown = ({ description, compositionAndCare }: Props) => {
               <p>
                 All products purchased from{" "}
                 <Link href={"/"} className="text-blue-700 dark:text-blue-400">
-                  luxera.com
+                  purefit.com.pk
                 </Link>{" "}
                 can be exchanged within 14 days of purchase only if:-
               </p>

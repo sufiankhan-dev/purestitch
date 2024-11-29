@@ -15,7 +15,7 @@ const inter = Inter({ subsets: ["latin"] });
 const robotoCondensed = Roboto_Condensed({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "PureStitch",
+  title: "PureFit",
   description:
     "Shop your favorite products and explore our unlimited collection of products",
 };

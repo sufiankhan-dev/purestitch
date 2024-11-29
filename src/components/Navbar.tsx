@@ -37,7 +37,7 @@ const Navbar = ({ Mensdata, Womensdata }: CategoriesItems) => {
           <CategoriesMenu MensData={Mensdata} WomensData={Womensdata} />
           <Link href={"/"}>
             <span className="text-2xl md:text-4xl font-extrabold italic flex items-center">
-              PureStitch
+              PureFit
             </span>
           </Link>
         </div>

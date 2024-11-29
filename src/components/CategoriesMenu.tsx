@@ -76,7 +76,7 @@ export default function CategoriesMenu({
               className="cursor-pointer dark:text-white"
               onClick={closeSheet}
             >
-              PureStitch
+              PureFit
             </Link>
           </SheetTitle>
         </SheetHeader>
