@@ -21,7 +21,7 @@ export default async function Home() {
   const data: HeroImages = await getData();
   return (
     <main className="text-gray-900 dark:text-gray-100">
-      <Hero image1={data.image1} image2={data.image2} image3={data.image3} />
+      <Hero image1={data?.image1} image2={data?.image2} image3={data?.image3} />
       <Wrapper>
         {/* heading and paragraph start */}
         <div className="text-center max-w-[800px] mx-auto my-[40px] md:my-[70px]">

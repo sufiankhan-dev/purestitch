@@ -42,10 +42,10 @@ const Footer = () => {
               <span className="cursor-pointer">Contactus@purefit.com.pk</span>
             </div>
             <div className="tracking-widest uppercase text-[12px] flex flex-col gap-x-[38px] md:gap-0 leading-relaxed pt-4">
-              <span className="cursor-pointer">UAN: 042 111-12-6423</span>
-              <span>MON-FRI 9:00 to 5:30 PSt</span>
+              <span className="cursor-pointer">CONTACT: 0336-2396337</span>
+              {/* <span>MON-FRI 9:00 to 5:30 PSt</span> */}
             </div>
-            <span className="text-[11px] text-gray-400 flex lg:hidden">
+            {/* <span className="text-[11px] text-gray-400 flex lg:hidden">
               Created By Sufian! For inquiries, contact:
               <Link
                 href={"mailto:sufiancoding@gmail.com"}
@@ -53,7 +53,7 @@ const Footer = () => {
               >
                 sufiancoding@gmail.com
               </Link>
-            </span>
+            </span> */}
           </div>
           {/* MENU END */}
 
@@ -113,13 +113,7 @@ const Footer = () => {
               <FaTwitter size={20} />
             </Link>
             <Link
-              href={"https://youtube.com"}
-              className="w-10 h-10 rounded-full bg-white/[0.25] dark:bg-gray-700 flex items-center justify-center text-black dark:text-white hover:bg-white/[0.5] dark:hover:bg-gray-600 cursor-pointer"
-            >
-              <FaYoutube size={20} />
-            </Link>
-            <Link
-              href={"https://instagram.com"}
+              href={"https://www.instagram.com/purefit.pk"}
               className="w-10 h-10 rounded-full bg-white/[0.25] dark:bg-gray-700 flex items-center justify-center text-black dark:text-white hover:bg-white/[0.5] dark:hover:bg-gray-600 cursor-pointer"
             >
               <FaInstagram size={20} />
