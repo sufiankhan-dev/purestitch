@@ -5,6 +5,7 @@ import heroImages from "./schemaTypes/heroImages";
 import deliveryAndReturn from "./schemaTypes/deliveryAndReturn";
 import mensCollection from "./schemaTypes/mensCollection";
 import womensCollection from "./schemaTypes/womensCollection";
+import kidsCollection from "./schemaTypes/kidsCollection";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
@@ -14,5 +15,6 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     deliveryAndReturn,
     mensCollection,
     womensCollection,
+    kidsCollection,
   ],
 };

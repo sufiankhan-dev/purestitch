@@ -11,7 +11,7 @@ export default function CartProvider({ children }: { children: ReactNode }) {
       stripe={process.env.NEXT_PUBLIC_STRIPE_KEY as string}
       successUrl={process.env.NEXT_PUBLIC_SUCCESS_URL as string}
       cancelUrl={process.env.NEXT_PUBLIC_ERROR_URL as string}
-      currency="USD"
+      currency="PKR"
       billingAddressCollection={false}
       shouldPersist={true}
       language="en-US"

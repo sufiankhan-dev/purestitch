@@ -5,7 +5,7 @@ import { CollectionsData } from "../../../../../type";
 import { client } from "../../../../../sanity/lib/client";
 
 async function getData(collectionName: string) {
-  const query = `*[_type == 'product' && category->name == "men" && collectionSlug == "${collectionName}"]{
+  const query = `*[_type == 'product' && category->name == "kid" && collectionSlug == "${collectionName}"]{
     _id,
     "imageUrl": image[0].asset->url,
     price,
@@ -23,7 +23,7 @@ async function getData(collectionName: string) {
   return data;
 }
 
-const MensCollection = async ({
+const KidsCollection = async ({
   params,
 }: {
   params: { collectionName: string };
@@ -110,4 +110,4 @@ const MensCollection = async ({
   );
 };
 
-export default MensCollection;
+export default KidsCollection;

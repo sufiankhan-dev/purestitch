@@ -60,11 +60,11 @@ const RelatedProducts = ({ products }: any) => {
                         {product.salePercent ? (
                           <div className="flex flex-row gap-x-3">
                             <span className="line-through text-gray-500 dark:text-gray-400">
-                              ${product.price.toFixed(2)}
+                              PKR {Math.round(product.price)}
                             </span>{" "}
                             <div className="bg-yellow-300 dark:bg-yellow-600 flex flex-row px-2 gap-x-3">
                               <span className="text-black dark:text-white">
-                                ${discountedPrice}
+                                PKR {discountedPrice}
                               </span>
                               {product.salePercent && (
                                 <p className="text-black dark:text-white">
@@ -74,7 +74,7 @@ const RelatedProducts = ({ products }: any) => {
                             </div>
                           </div>
                         ) : (
-                          <span>${product.price.toFixed(2)}</span>
+                          <span>PKR {Math.round(product.price)}</span>
                         )}
                       </div>
                     </div>

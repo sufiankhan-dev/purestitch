@@ -1,5 +1,4 @@
 import { defineField, defineType } from "sanity";
-import { ColorInput } from "@sanity/color-input";
 
 export default defineType({
   name: "product",
@@ -10,6 +9,11 @@ export default defineType({
       name: "name",
       title: "Name of Product",
       type: "string",
+    }),
+    defineField({
+      name: "productId",
+      title: "Product Id",
+      type: "number",
     }),
     defineField({
       name: "image",
@@ -77,12 +81,6 @@ export default defineType({
       description: "% of sale",
     }),
     defineField({
-      name: "price_id",
-      title: "Stripe price ID",
-      validation: (Rule) => Rule.required(),
-      type: "string",
-    }),
-    defineField({
       name: "category",
       title: "Category",
       validation: (Rule) => Rule.required(),
@@ -95,7 +93,11 @@ export default defineType({
       validation: (Rule) => Rule.required(),
       description: "Select collection according to the category of the product",
       type: "reference",
-      to: [{ type: "mensCollections" }, { type: "womensCollections" }],
+      to: [
+        { type: "mensCollections" },
+        { type: "womensCollections" },
+        { type: "kidsCollections" },
+      ],
     }),
     defineField({
       name: "collectionSlug",

@@ -13,6 +13,7 @@ export interface simplifiedProduct {
 export interface fullProductData {
   _id: string;
   image: any;
+  productId: number;
   price: number;
   slug: string;
   categoryName: string;
@@ -41,6 +42,7 @@ export interface HeroImages {
 export interface CategoriesItems {
   Mensdata: any;
   Womensdata: any;
+  Kidsdata: any;
 }
 
 export interface CollectionsData {
