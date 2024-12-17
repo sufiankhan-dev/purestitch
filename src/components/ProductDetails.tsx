@@ -52,7 +52,7 @@ const ProductDetails = ({ data }: { data: any }) => {
             </div>
           </>
         ) : (
-          <span className="font-bold text-gray-900 dark:text-gray-100 uppercase flex flex-row gap-x-6 text-lg">
+          <span className="font-bold text-gray-900 dark:text-gray-100 uppercase flex flex-row gap-x-4 text-lg">
             <span>Price:</span>
             <span>PKR {Math.round(data.price)}</span>
           </span>

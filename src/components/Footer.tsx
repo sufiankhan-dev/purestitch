@@ -6,8 +6,8 @@ import Image from "next/image";
 
 const Helplinks = [
   { name: "FAQ's", href: "" },
-  { name: "Log in/sign up", href: "" },
-  { name: "how to buy", href: `` },
+  // { name: "Log in/sign up", href: "" },
+  // { name: "how to buy", href: `` },
   { name: "payment", href: `` },
   { name: "shipping and deliveries", href: `` },
   { name: "exchange & return", href: `` },
@@ -15,9 +15,8 @@ const Helplinks = [
 
 const Aboutlinks = [
   { name: "about us", href: "" },
-  { name: "retail stores", href: "" },
+  // { name: "retail stores", href: "" },
   { name: "contact us", href: `` },
-  { name: "work with us", href: `` },
 ];
 
 const Bottomlinks = [
@@ -39,7 +38,7 @@ const Footer = () => {
             </div>
             <div className="tracking-widest uppercase text-[12px] flex gap-x-24 md:gap-0 flex-col leading-relaxed">
               <span>Send Email</span>
-              <span className="cursor-pointer">Contactus@purefit.com.pk</span>
+              <span className="cursor-pointer">purefit.pk@gmail.com</span>
             </div>
             <div className="tracking-widest uppercase text-[12px] flex flex-col gap-x-[38px] md:gap-0 leading-relaxed pt-4">
               <span className="cursor-pointer">CONTACT: 0336-2396337</span>
@@ -101,17 +100,17 @@ const Footer = () => {
         <div className="flex flex-col gap-4">
           <div className="flex flex-row gap-4 justify-center md:justify-start">
             <Link
-              href={"https://facebook.com"}
+              href={"https://www.facebook.com/people/PureFit/61569962172697"}
               className="w-10 h-10 rounded-full bg-white/[0.25] dark:bg-gray-700 flex items-center justify-center text-black dark:text-white hover:bg-white/[0.5] dark:hover:bg-gray-600 cursor-pointer"
             >
               <FaFacebookF size={20} />
             </Link>
-            <Link
+            {/* <Link
               href="https://twitter.com"
               className="w-10 h-10 rounded-full bg-white/[0.25] dark:bg-gray-700 flex items-center justify-center text-black dark:text-white hover:bg-white/[0.5] dark:hover:bg-gray-600 cursor-pointer"
             >
               <FaTwitter size={20} />
-            </Link>
+            </Link> */}
             <Link
               href={"https://www.instagram.com/purefit.pk"}
               className="w-10 h-10 rounded-full bg-white/[0.25] dark:bg-gray-700 flex items-center justify-center text-black dark:text-white hover:bg-white/[0.5] dark:hover:bg-gray-600 cursor-pointer"

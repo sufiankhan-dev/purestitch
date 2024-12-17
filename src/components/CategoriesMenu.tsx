@@ -93,7 +93,7 @@ export default function CategoriesMenu({
           </div>
         </div>
         <div className="pt-3">
-          {selectedCategory === "men" && (
+          {/* {selectedCategory === "men" && (
             <ul className="capitalize text-lg">
               <Link
                 href={"/category/men"}
@@ -167,6 +167,101 @@ export default function CategoriesMenu({
                 </li>
               ))}
             </ul>
+          )} */}
+          {selectedCategory === "men" && (
+            <ul className="capitalize text-lg">
+              {MensData.length > 0 ? (
+                <>
+                  <Link
+                    href={"/category/men"}
+                    className="flex flex-row gap-x-2 hover:font-semibold"
+                    onClick={closeSheet}
+                  >
+                    <span>View All</span>
+                    <ArrowRight />
+                  </Link>
+                  {MensData.map((collection) => (
+                    <li
+                      key={collection.collectionSlug}
+                      className="hover:font-semibold"
+                    >
+                      <Link
+                        href={`/collection/men/${collection.collectionSlug}`}
+                        onClick={closeSheet}
+                      >
+                        {collection.collectionName}
+                      </Link>
+                    </li>
+                  ))}
+                </>
+              ) : (
+                <p className="text-gray-500 text-2xl italic">Coming Soon</p>
+              )}
+            </ul>
+          )}
+
+          {selectedCategory === "women" && (
+            <ul className="capitalize text-lg">
+              {WomensData.length > 0 ? (
+                <>
+                  <Link
+                    href={"/category/women"}
+                    className="flex flex-row gap-x-2 hover:font-semibold"
+                    onClick={closeSheet}
+                  >
+                    <span>View All</span>
+                    <ArrowRight />
+                  </Link>
+                  {WomensData.map((collection) => (
+                    <li
+                      key={collection.collectionSlug}
+                      className="hover:font-semibold"
+                    >
+                      <Link
+                        href={`/collection/women/${collection.collectionSlug}`}
+                        onClick={closeSheet}
+                      >
+                        {collection.collectionName}
+                      </Link>
+                    </li>
+                  ))}
+                </>
+              ) : (
+                <p className="text-gray-500 text-2xl italic">Coming Soon</p>
+              )}
+            </ul>
+          )}
+
+          {selectedCategory === "kids" && (
+            <ul className="capitalize text-lg">
+              {KidsData.length > 0 ? (
+                <>
+                  <Link
+                    href={"/category/kid"}
+                    className="flex flex-row gap-x-2 hover:font-semibold"
+                    onClick={closeSheet}
+                  >
+                    <span>View All</span>
+                    <ArrowRight />
+                  </Link>
+                  {KidsData.map((collection) => (
+                    <li
+                      key={collection.collectionSlug}
+                      className="hover:font-semibold"
+                    >
+                      <Link
+                        href={`/collection/kid/${collection.collectionSlug}`}
+                        onClick={closeSheet}
+                      >
+                        {collection.collectionName}
+                      </Link>
+                    </li>
+                  ))}
+                </>
+              ) : (
+                <p className="text-gray-500 text-2xl italic">Coming Soon</p>
+              )}
+            </ul>
           )}
         </div>
         <div className="absolute bottom-10">
@@ -183,14 +278,6 @@ export default function CategoriesMenu({
             />
           </div>
         </div>
-        {/* <div className="absolute bottom-0 left-0 right-0 flex md:hidden justify-between p-4 items-center">
-          <Link
-            href={"/"}
-            className="px-4 py-2 font-medium uppercase cursor-pointer"
-          >
-            Home
-          </Link>
-        </div> */}
       </SheetContent>
     </Sheet>
   );

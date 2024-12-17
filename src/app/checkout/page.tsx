@@ -462,7 +462,7 @@ export default function CheckoutPage() {
           </div>
 
           <div className="md:col-span-1">
-            <section className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transform hover:-skew-x-1 transition-transform duration-300 sticky top-4">
+            <section className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md sticky top-4">
               <h2 className="text-2xl font-semibold mb-4">Order Summary</h2>
               <div className="space-y-4">
                 {Object.values(cartData).map((item) => (
@@ -474,9 +474,9 @@ export default function CheckoutPage() {
                       <Image
                         src={item.image}
                         alt={item.name}
-                        width={50}
-                        height={50}
-                        className="mr-2 rounded"
+                        width={56}
+                        height={56}
+                        className="mr-2 rounded object-cover w-14 h-14"
                       />
                       <div>
                         <p className="font-semibold line-clamp-1">
