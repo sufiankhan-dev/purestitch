@@ -40,7 +40,14 @@ const Navbar = ({ Mensdata, Womensdata, Kidsdata }: CategoriesItems) => {
             WomensData={Womensdata}
             KidsData={Kidsdata}
           />
-          <Link href={"/"}>
+          <Link href={"/"} className="flex flex-row items-center gap-x-1">
+            <img
+              src={"/logo.png"}
+              alt="logo"
+              width={35}
+              height={35}
+              className="dark:hidden"
+            />
             <span className="text-2xl md:text-4xl font-extrabold italic flex items-center">
               PureFit
             </span>
