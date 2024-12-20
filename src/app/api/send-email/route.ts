@@ -62,6 +62,7 @@ export async function POST(req: Request) {
         <p><strong>Order ID:</strong> ${orderId}</p>
         <p><strong>Customer:</strong> ${personalDetails.firstName} ${personalDetails.lastName}</p>
         <p><strong>Email:</strong> ${personalDetails.email}</p>
+        <p><strong>Phone:</strong> ${personalDetails.phone}</p>
         <p><strong>Address:</strong> ${deliveryAddress.street}, ${deliveryAddress.city}, ${deliveryAddress.country}</p>
         <ul>${orderSummary}</ul>
         <p><strong>Total Amount:</strong> ${Math.round(totalAmount)}</p>
