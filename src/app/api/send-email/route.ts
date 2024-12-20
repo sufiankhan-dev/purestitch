@@ -55,7 +55,7 @@ export async function POST(req: Request) {
 
     const adminMailOptions = {
       from: "PureFit <no-reply@purefit.com>",
-      to: "purefit@gmail.com",
+      to: "amashelahi955@gmail.com",
       subject: "New Order Received",
       html: `
         <h2>New Order Received</h2>

@@ -14,9 +14,9 @@ const Helplinks = [
 ];
 
 const Aboutlinks = [
-  { name: "about us", href: "" },
+  { name: "about us", href: "/about" },
   // { name: "retail stores", href: "" },
-  { name: "contact us", href: `` },
+  { name: "contact us", href: "/contact" },
 ];
 
 const Bottomlinks = [
@@ -38,10 +38,12 @@ const Footer = () => {
             </div>
             <div className="tracking-widest uppercase text-[12px] flex gap-x-24 md:gap-0 flex-col leading-relaxed">
               <span>Send Email</span>
-              <span className="cursor-pointer">purefit.pk@gmail.com</span>
+              <span className="cursor-pointer lowercase">
+                purefit.pk@gmail.com
+              </span>
             </div>
             <div className="tracking-widest uppercase text-[12px] flex flex-col gap-x-[38px] md:gap-0 leading-relaxed pt-4">
-              <span className="cursor-pointer">CONTACT: 0336-2396337</span>
+              <span className="cursor-pointer">CONTACT: +92 336-2396337</span>
               {/* <span>MON-FRI 9:00 to 5:30 PSt</span> */}
             </div>
             {/* <span className="text-[11px] text-gray-400 flex lg:hidden">
