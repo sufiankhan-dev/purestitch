@@ -28,15 +28,15 @@ const DeliveryAndReturnDialog = () => {
               </span>
               <div className="mt-1 leading-relaxed tracking-wide mb-4">
                 <p>
-                  FLAT Shipping 219 PKR + FBR POS Fee 1 PKR will be charged on
+                  FLAT Shipping 249 PKR + FBR POS Fee 1 PKR will be charged on
                   order within Pakistan.
                 </p>
                 <p>
-                  All orders may take up to 5-7 working days in regular days and
+                  All orders may take up to 4-5 working days in regular days and
                   during sales it will be delivered in 7-10 working days.
                 </p>
               </div>
-              <span className="font-bold text-sm text-black dark:text-white uppercase tracking-wide">
+              {/* <span className="font-bold text-sm text-black dark:text-white uppercase tracking-wide">
                 Returns:
               </span>
               <div className="mt-1 leading-relaxed tracking-wide">
@@ -56,7 +56,7 @@ const DeliveryAndReturnDialog = () => {
                   product or is found to be not the same as you had actually
                   purchased.
                 </p>
-              </div>
+              </div> */}
             </DialogDescription>
           </DialogHeader>
         </DialogContent>
