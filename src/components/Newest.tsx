@@ -58,7 +58,7 @@ const Newest = async () => {
             return (
               <div key={product._id} className="group relative">
                 <Link href={`/product/${product.slug}`}>
-                  <div className="aspect-square w-full overflow-hidden bg-newgray group-hover:opacity-75 lg:h-80">
+                  <div className="aspect-square w-full overflow-hidden bg-white border border-gray-200 dark:border-gray-700 group-hover:opacity-75 lg:h-80">
                     {/* Product Image  */}
                     <Image
                       src={product.imageUrl}

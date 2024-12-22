@@ -100,7 +100,7 @@ export default function AboutUsPage() {
 
         <div className="mt-10 text-center">
           <Link href={"/"}>
-            <Button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            <Button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-black hover:bg-gray-700 dark:bg-white dark:text-black dark:hover:bg-gray-300 focus:outline-none border-none">
               Shop Now
             </Button>
           </Link>

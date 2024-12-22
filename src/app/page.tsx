@@ -4,6 +4,7 @@ import Wrapper from "@/components/Wrapper";
 import { client } from "../../sanity/lib/client";
 import { HeroImages } from "../../type";
 import HotItems from "@/components/HotItems";
+import CustomHoodiePromo from "@/components/CustomHoodieMockup";
 
 async function getData() {
   const query = `*[_type == 'heroImage'][0]{
@@ -40,6 +41,7 @@ export default async function Home() {
       </Wrapper>
       <Newest />
       <HotItems />
+      <CustomHoodiePromo />
     </main>
   );
 }

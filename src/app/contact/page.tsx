@@ -125,7 +125,7 @@ export default function ContactPage() {
                 <div className="flex items-center">
                   <Mail className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
                   <span className="ml-3 text-gray-700 dark:text-gray-300">
-                    support@purefit.com
+                    purefit.pk@gmail.com
                   </span>
                 </div>
                 <div className="flex items-center">
