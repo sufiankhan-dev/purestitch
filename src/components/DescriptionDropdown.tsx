@@ -61,7 +61,7 @@ const DescriptionDropdown = ({ description, compositionAndCare }: Props) => {
             </span>
             <div className="mt-1 leading-relaxed tracking-wide mb-4 dark:text-gray-400">
               <p>
-                FLAT Shipping 219 PKR + FBR POS Fee 1 PKR will be charged on
+                FLAT Shipping 249 PKR + FBR POS Fee 1 PKR will be charged on
                 order within Pakistan.
               </p>
               <p>
@@ -69,7 +69,7 @@ const DescriptionDropdown = ({ description, compositionAndCare }: Props) => {
                 during sales it will be delivered in 7-10 working days.
               </p>
             </div>
-            <span className="font-bold text-sm text-black dark:text-white uppercase tracking-wide">
+            {/* <span className="font-bold text-sm text-black dark:text-white uppercase tracking-wide">
               Returns:
             </span>
             <div className="mt-1 leading-relaxed tracking-wide dark:text-gray-400">
@@ -89,7 +89,7 @@ const DescriptionDropdown = ({ description, compositionAndCare }: Props) => {
                 product or is found to be not the same as you had actually
                 purchased.
               </p>
-            </div>
+            </div> */}
           </AccordionContent>
         </AccordionItem>
       </Accordion>

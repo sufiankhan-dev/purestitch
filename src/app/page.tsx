@@ -17,6 +17,8 @@ async function getData() {
   return data;
 }
 
+export const revalidate = 30;
+
 export default async function Home() {
   const data: HeroImages = await getData();
   return (

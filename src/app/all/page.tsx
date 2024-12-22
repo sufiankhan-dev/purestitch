@@ -21,6 +21,8 @@ async function getData() {
   return data;
 }
 
+export const revalidate = 30;
+
 const All = async () => {
   const data: simplifiedProduct[] = await getData();
 

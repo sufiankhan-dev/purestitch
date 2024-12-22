@@ -22,6 +22,8 @@ async function getData() {
   return data;
 }
 
+export const revalidate = 30;
+
 const HotItems = async () => {
   const data: simplifiedProduct[] = await getData();
 

@@ -23,6 +23,8 @@ async function getData(collectionName: string) {
   return data;
 }
 
+export const revalidate = 30;
+
 const WomensCollection = async ({
   params,
 }: {

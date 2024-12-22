@@ -20,6 +20,8 @@ async function getData(category: string) {
   return data;
 }
 
+export const revalidate = 30;
+
 const CategoryPage = async ({ params }: { params: { category: string } }) => {
   const data: simplifiedProduct[] = await getData(params.category);
   return (
