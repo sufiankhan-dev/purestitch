@@ -18,16 +18,6 @@ export default function CustomHoodiePromo() {
               you.
             </p>
             <div className="mt-8 space-y-4 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-4">
-              {/* <Link>
-              <Button className="w-full flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white dark:text-black bg-black dark:bg-white hover:bg-gray-800  ">
-                <MessageCircle className="mr-2 h-5 w-5" />
-                Share on WhatsApp
-              </Button>
-              </Link>
-              <Button className="w-full flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white dark:text-black bg-black dark:bg-white hover:bg-gray-800 dark:hover:bg-gray-300">
-                <Instagram className="mr-2 h-5 w-5" />
-                Share on Instagram
-              </Button> */}
               <Link
                 href="https://www.instagram.com/purefit.pk"
                 target="_blank"
@@ -43,7 +33,7 @@ export default function CustomHoodiePromo() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button className="w-full flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white dark:text-black bg-black dark:bg-white hover:bg-gray-800 dark:hover:bg-gray-300">
+                <Button className="w-full mt-5 sm:mt-0 flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white dark:text-black bg-black dark:bg-white hover:bg-gray-800 dark:hover:bg-gray-300">
                   <MessageCircle className="mr-2 h-5 w-5" />
                   Share on WhatsApp
                 </Button>
