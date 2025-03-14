@@ -14,6 +14,9 @@ export default defineType({
       name: "productId",
       title: "Product Id",
       type: "number",
+      description:
+        "Unique identifier for the product. Should be a number greater than 0. Each new product should have an ID higher than existing products.",
+      validation: (Rule) => Rule.required().greaterThan(0).precision(0),
     }),
     defineField({
       name: "image",
@@ -57,16 +60,6 @@ export default defineType({
       title: "Composition and Care",
       type: "array",
       of: [{ type: "string" }],
-    }),
-    defineField({
-      name: "slug",
-      title: "Product slug",
-      validation: (Rule) => Rule.required(),
-      type: "slug",
-      options: {
-        source: "name",
-        maxLength: 96,
-      },
     }),
     defineField({
       name: "price",

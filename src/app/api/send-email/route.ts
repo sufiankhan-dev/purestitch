@@ -26,6 +26,7 @@ export async function POST(req: Request) {
         (item: any) =>
           `<li style="margin-bottom: 10px;">
             <strong>Name:</strong> ${item.name} <br />
+            <strong>Product ID:</strong> ${item.productId} <br />
             <strong>Size:</strong> ${item.selectedSize} <br />
             <strong>Quantity:</strong> ${item.quantity} <br />
             <strong>Price:</strong> ${Math.round(item.price)}

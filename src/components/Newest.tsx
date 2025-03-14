@@ -10,8 +10,7 @@ async function getData() {
     _id,
     price,
     name,
-    "slug": slug.current,
-    "categoryName": category->name,
+    productId,
     "imageUrl": image[0].asset->url,
     salePercent,
     colors
@@ -57,7 +56,7 @@ const Newest = async () => {
 
             return (
               <div key={product._id} className="group relative">
-                <Link href={`/product/${product.slug}`}>
+                <Link href={`/product/${product.productId}`}>
                   <div className="aspect-square w-full overflow-hidden bg-white border border-gray-200 dark:border-gray-700 group-hover:opacity-75 lg:h-80">
                     {/* Product Image  */}
                     <Image

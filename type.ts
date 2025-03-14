@@ -2,7 +2,7 @@ export interface simplifiedProduct {
   _id: string;
   imageUrl: string;
   price: number;
-  slug: string;
+  productId: number;
   categoryName: string;
   name: string;
   salePercent: number;
@@ -15,7 +15,6 @@ export interface fullProductData {
   image: any;
   productId: number;
   price: number;
-  slug: string;
   categoryName: string;
   name: string;
   description: string;
@@ -49,7 +48,7 @@ export interface CollectionsData {
   _id: string;
   imageUrl: string;
   price: number;
-  slug: string;
+  productId: number;
   categoryName: string;
   name: string;
   collectionName: string;

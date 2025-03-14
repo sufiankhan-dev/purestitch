@@ -23,7 +23,7 @@ const RelatedProducts = ({ products }: any) => {
 
               return (
                 <div key={product._id} className="group relative">
-                  <Link href={`/product/${product.slug}`}>
+                  <Link href={`/product/${product.productId}`}>
                     <div className="aspect-square w-full overflow-hidden bg-newgray group-hover:opacity-75 lg:h-80">
                       <Image
                         src={product.imageUrl}
