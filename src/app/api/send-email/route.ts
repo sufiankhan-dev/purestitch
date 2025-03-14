@@ -44,7 +44,7 @@ export async function POST(req: Request) {
         <p><strong>Order ID:</strong> ${orderId}</p>
         <ul>${orderSummary}</ul>
 
-        <p>Delievery Charges: PKR 250
+        <p>Delievery Charges: PKR 150
 
         <p><strong>Total Amount:</strong> PKR ${Math.round(totalAmount)}</p>
 

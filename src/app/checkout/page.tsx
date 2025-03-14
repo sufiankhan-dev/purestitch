@@ -78,7 +78,7 @@ export default function CheckoutPage() {
     }
   }, []);
 
-  const SHIPPING_CHARGE = 250;
+  const SHIPPING_CHARGE = 150;
 
   const calculateTotal = () => {
     const subtotal = Object.values(cartData).reduce(
